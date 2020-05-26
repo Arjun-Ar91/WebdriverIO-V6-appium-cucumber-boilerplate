@@ -1,6 +1,7 @@
 const {Given, When, Then} = require('cucumber');
 
 const CelsiusToFahrenheitConvertorPage = require('./../pages/celsiusToFahrenheitConvertor.page');
+
 const celsiusToFahrenheitConvertorPage = new CelsiusToFahrenheitConvertorPage();
 
 Given(/^I launch the app$/, () => {
