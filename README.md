@@ -1,4 +1,4 @@
-# webdriverio-v6-cucumber-perfecto-boilerplate
+# WebdriverIO6-appium-cucumber-boilerplate
 
 Boilerplate project to run native and browser for android and ios using cucumber with page object pattern.
 
