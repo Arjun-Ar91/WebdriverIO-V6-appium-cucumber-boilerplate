@@ -15,6 +15,7 @@ Boilerplate project to run native and browser for android and ios using cucumber
 - iOS Safari browser 
 - Supports Page Object Model
 - Contains sample test scenarios in cucumber
+- Supports with multiple cucumber html reports
 
 ## Source
 Click below to know more 
