@@ -1,3 +1,5 @@
+const { generate } = require('multiple-cucumber-html-reporter');
+
 exports.config = {
     //
     // ====================
@@ -132,7 +134,14 @@ exports.config = {
     // Test reporter for stdout.
     // The only one supported by default is 'dot'
     // see also: https://webdriver.io/docs/dot-reporter.html
-    reporters: ['spec'],
+    reporters: [
+        [
+            'cucumberjs-json', {
+            jsonFolder: './reports/json',
+            language: 'en',
+        }
+        ]
+    ],
     // =====
     // Hooks
     // =====
@@ -252,8 +261,13 @@ exports.config = {
      * @param {Array.<Object>} capabilities list of capabilities details
      * @param {<Object>} results object containing test results
      */
-    // onComplete: function(exitCode, config, capabilities, results) {
-    // },
+    onComplete: function(exitCode, config, capabilities, results) {
+        generate({
+            jsonDir: './reports/json',
+            reportPath: './reports/html',
+            openReportInBrowser: true
+        });
+    },
     /**
      * Gets executed when a refresh happens.
      * @param {String} oldSessionId session ID of the old session

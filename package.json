@@ -32,6 +32,8 @@
   },
   "dependencies": {
     "chai": "^4.2.0",
-    "cucumber": "^6.0.5"
+    "cucumber": "^6.0.5",
+    "multiple-cucumber-html-reporter": "^1.16.2",
+    "wdio-cucumberjs-json-reporter": "^2.0.2"
   }
 }
