@@ -40,24 +40,14 @@ exports.config = {
     // and 30 processes will get spawned. The property handles how many capabilities
     // from the same test should run tests.
     //
-    //maxInstances: 10, //arjun
     //
     // If you have trouble getting all important capabilities together, check out the
     // Sauce Labs platform configurator - a great tool to configure your capabilities:
     // https://docs.saucelabs.com/reference/platforms-configurator
     //
-    // capabilities: [{ // arjun
+    // capabilities: [{
+    // capabilities are added in the individual config files for browser and native apps
     //
-    //     // maxInstances can get overwritten per capability. So if you have an in-house Selenium
-    //     // grid with only 5 firefox instances available you can make sure that not more than
-    //     // 5 instances get started at a time.
-    //     maxInstances: 5,
-    //     //
-    //     browserName: 'chrome',
-    //     // If outputDir is provided WebdriverIO can capture driver session logs
-    //     // it is possible to configure which logTypes to include/exclude.
-    //     // excludeDriverLogs: ['*'], // pass '*' to exclude all driver session logs
-    //     // excludeDriverLogs: ['bugreport', 'server'],
     // }],
     //
     // ===================
@@ -85,13 +75,6 @@ exports.config = {
     // If you only want to run your tests until a specific amount of tests have failed use
     // bail (default is 0 - don't bail, run all tests).
     bail: 0,
-    //
-    // Set a base URL in order to shorten url command calls. If your `url` parameter starts
-    // with `/`, the base url gets prepended, not including the path portion of your baseUrl.
-    // If your `url` parameter starts without a scheme or `/` (like `some/path`), the base url
-    // gets prepended directly.
-    //baseUrl: 'http://localhost', //arjun
-    //
     // Default timeout for all waitFor* commands.
     waitforTimeout: 10000,
     //
@@ -106,24 +89,13 @@ exports.config = {
     // Services take over a specific job you don't want to take care of. They enhance
     // your test setup with almost no effort. Unlike plugins, they don't add new
     // commands. Instead, they hook themselves up into the test process.
-    // services: [
-    //     ['appium', {
-    //         command: 'appium',
-    //         args: {
-    //             // any arguments can be given from below list
-    //             // http://appium.io/docs/en/writing-running-appium/server-args/index.html
-    //         }
-    //     }]
-    // ], //arjun
     services: ['appium'],
     appium: {
         command: 'appium',
         args: {},
     },
-    //host: '127.0.0.1', // arjun
     port: 4723,
     path: '/wd/hub',
-///appium: { command: 'appium' }
     // Framework you want to run your specs with.
     // The following are supported: Mocha, Jasmine, and Cucumber
     // see also: https://webdriver.io/docs/frameworks.html
@@ -161,15 +133,6 @@ exports.config = {
     // The only one supported by default is 'dot'
     // see also: https://webdriver.io/docs/dot-reporter.html
     reporters: ['spec'],
-
-    //
-    // Options to be passed to Mocha.
-    // See the full list at http://mochajs.org/
-    // mochaOpts: { // arjun
-    //     ui: 'bdd',
-    //     timeout: 60000
-    // },
-    //
     // =====
     // Hooks
     // =====
