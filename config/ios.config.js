@@ -11,7 +11,7 @@ config.capabilities = [{
     automationName: 'XCUITest',
     deviceName: IosInfo.deviceName(),
     platformVersion: IosInfo.platFormVersion(),
-    app: IosInfo.appName() //use - path.resolve(`./apps/${IosInfo.appName()}`) if passing a custom app and require the path module
+    app: IosInfo.appName() //use - path.resolve(`./apps/${IosInfo.appName()}`) if passing a custom app
 }];
 
 config.cucumberOpts.tagExpression = '@iosApp';// pass tag to run tests specific to ios
