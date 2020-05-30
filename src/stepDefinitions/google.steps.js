@@ -1,4 +1,4 @@
-const {Given, When, Then} = require('cucumber');
+const {Given, Then} = require('cucumber');
 
 const GooglePage = require('./../pages/google.page');
 

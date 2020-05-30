@@ -30,7 +30,6 @@ class ActionHelper {
 
     static waitForElement(locator, waitTimeInSeconds) {
         $(locator).waitForDisplayed(waitTimeInSeconds * 1000);
-        console.log('******* WAIT ELEMENT', waitTimeInSeconds * 1000);
     }
 
     static clearText(locator) {
