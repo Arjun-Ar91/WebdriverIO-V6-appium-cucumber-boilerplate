@@ -1,10 +1,11 @@
 const ActionHelper = require('./../helpers/actionHelpers');
-const chai = require('chai').should();
+require('chai').should();
 
 class SettingsPage {
 
     getObjectLocator() {
-        return require(`./../screens/native/${browser.capabilities.platformName.toLowerCase()}/settings.screen.js`);
+        const platform = browser.capabilities.platformName.toLowerCase();
+        return require(`./../screens/native/${platform}/settings.screen.js`);
     }
 
     launchApp() {

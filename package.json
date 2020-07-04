@@ -6,7 +6,8 @@
     "android": "wdio ./config/android.config.js",
     "ios": "wdio ./config/ios.config.js",
     "androidBrowser": "wdio ./config/androidBrowser.config.js",
-    "iosBrowser": "wdio ./config/iosBrowser.config.js"
+    "iosBrowser": "wdio ./config/iosBrowser.config.js",
+    "lint": "eslint ."
   },
   "keywords": [
     "Appium",
@@ -28,7 +29,8 @@
     "@wdio/spec-reporter": "^6.1.12",
     "@wdio/sync": "^6.1.8",
     "chromedriver": "^83.0.0",
-    "wdio-chromedriver-service": "^6.0.3"
+    "wdio-chromedriver-service": "^6.0.3",
+    "eslint": "^7.3.0"
   },
   "dependencies": {
     "chai": "^4.2.0",

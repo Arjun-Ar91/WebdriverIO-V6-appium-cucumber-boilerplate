@@ -1,10 +1,10 @@
 const ActionHelper = require('./../helpers/actionHelpers');
-const chai = require('chai').should();
+require('chai').should();
 
 class GooglePage {
 
     getObjectLocator() {
-        return require(`./../screens/web/google.screen.js`);
+        return require('./../screens/web/google.screen.js');
     }
 
     launchGoogle() {
