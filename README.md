@@ -38,3 +38,5 @@ Follow the below commands -
 - Execute `npm run android` to run android native app
 
 - Execute `npm run androidBrowser` to run android chrome browser
+
+- Execute `npm run lint` to run eslint
